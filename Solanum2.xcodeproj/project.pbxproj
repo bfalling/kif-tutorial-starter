@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836A94BB6EA5A425DCBD454D /* libPods-Solanum2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD425C360FDD4838E3C90EDF /* libPods-Solanum2Tests.a */; };
 		DB50B15D1BA5EFA100824DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50B15C1BA5EFA100824DE3 /* main.m */; };
 		DB50B1681BA5EFA100824DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB50B1671BA5EFA100824DE3 /* Images.xcassets */; };
 		DB50B16B1BA5EFA100824DE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB50B1691BA5EFA100824DE3 /* LaunchScreen.xib */; };
@@ -39,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19F75691FDE9E06BCA3F372B /* Pods-Solanum2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solanum2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solanum2Tests/Pods-Solanum2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		913D448455E88E1AB9FD6717 /* Pods-Solanum2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solanum2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Solanum2Tests/Pods-Solanum2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CD425C360FDD4838E3C90EDF /* libPods-Solanum2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Solanum2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB50B1571BA5EFA100824DE3 /* Solanum2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solanum2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB50B15B1BA5EFA100824DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB50B15C1BA5EFA100824DE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,18 +90,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836A94BB6EA5A425DCBD454D /* libPods-Solanum2Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C3816AFBF4DDC4ADF71A02E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD425C360FDD4838E3C90EDF /* libPods-Solanum2Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB50B14E1BA5EFA100824DE3 = {
 			isa = PBXGroup;
 			children = (
 				DB50B1591BA5EFA100824DE3 /* Solanum2 */,
 				DB50B1731BA5EFA100824DE3 /* Solanum2Tests */,
 				DB50B1581BA5EFA100824DE3 /* Products */,
+				EF8A45CACC589C869949D2B2 /* Pods */,
+				3C3816AFBF4DDC4ADF71A02E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +194,15 @@
 			name = icons;
 			sourceTree = "<group>";
 		};
+		EF8A45CACC589C869949D2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19F75691FDE9E06BCA3F372B /* Pods-Solanum2Tests.debug.xcconfig */,
+				913D448455E88E1AB9FD6717 /* Pods-Solanum2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB50B17D1BA5EFA100824DE3 /* Build configuration list for PBXNativeTarget "Solanum2Tests" */;
 			buildPhases = (
+				6A90265334DD7DC110D22E64 /* Check Pods Manifest.lock */,
 				DB50B16C1BA5EFA100824DE3 /* Sources */,
 				DB50B16D1BA5EFA100824DE3 /* Frameworks */,
 				DB50B16E1BA5EFA100824DE3 /* Resources */,
+				E29855C75D2AD15B9BA334E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +306,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A90265334DD7DC110D22E64 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E29855C75D2AD15B9BA334E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Solanum2Tests/Pods-Solanum2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB50B1531BA5EFA100824DE3 /* Sources */ = {
@@ -431,6 +490,7 @@
 		};
 		DB50B17E1BA5EFA100824DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19F75691FDE9E06BCA3F372B /* Pods-Solanum2Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -450,6 +510,7 @@
 		};
 		DB50B17F1BA5EFA100824DE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913D448455E88E1AB9FD6717 /* Pods-Solanum2Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -482,6 +543,7 @@
 				DB50B17C1BA5EFA100824DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB50B17D1BA5EFA100824DE3 /* Build configuration list for PBXNativeTarget "Solanum2Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +552,7 @@
 				DB50B17F1BA5EFA100824DE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
