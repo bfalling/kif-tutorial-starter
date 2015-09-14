@@ -11,7 +11,6 @@
 		DB50B15D1BA5EFA100824DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50B15C1BA5EFA100824DE3 /* main.m */; };
 		DB50B1681BA5EFA100824DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB50B1671BA5EFA100824DE3 /* Images.xcassets */; };
 		DB50B16B1BA5EFA100824DE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB50B1691BA5EFA100824DE3 /* LaunchScreen.xib */; };
-		DB50B1771BA5EFA100824DE3 /* Solanum2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50B1761BA5EFA100824DE3 /* Solanum2Tests.m */; };
 		DB50B1901BA5EFCD00824DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50B1811BA5EFCD00824DE3 /* AppDelegate.m */; };
 		DB50B1911BA5EFCD00824DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB50B1821BA5EFCD00824DE3 /* Main.storyboard */; };
 		DB50B1921BA5EFCD00824DE3 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB50B1851BA5EFCD00824DE3 /* SettingsViewController.m */; };
@@ -50,7 +49,6 @@
 		DB50B16A1BA5EFA100824DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DB50B1701BA5EFA100824DE3 /* Solanum2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Solanum2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB50B1751BA5EFA100824DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB50B1761BA5EFA100824DE3 /* Solanum2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Solanum2Tests.m; sourceTree = "<group>"; };
 		DB50B1801BA5EFCD00824DE3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB50B1811BA5EFCD00824DE3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DB50B1821BA5EFCD00824DE3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		DB50B1731BA5EFA100824DE3 /* Solanum2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DB50B1761BA5EFA100824DE3 /* Solanum2Tests.m */,
 				DB50B1741BA5EFA100824DE3 /* Supporting Files */,
 			);
 			path = Solanum2Tests;
@@ -360,7 +357,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB50B1771BA5EFA100824DE3 /* Solanum2Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
