@@ -128,6 +128,7 @@
 		DB50B1591BA5EFA100824DE3 /* Solanum2 */ = {
 			isa = PBXGroup;
 			children = (
+				DB50B1A81BA5F9B500824DE3 /* README.md */,
 				DB50B1801BA5EFCD00824DE3 /* AppDelegate.h */,
 				DB50B1811BA5EFCD00824DE3 /* AppDelegate.m */,
 				DB50B1821BA5EFCD00824DE3 /* Main.storyboard */,
@@ -149,7 +150,6 @@
 				DB50B1691BA5EFA100824DE3 /* LaunchScreen.xib */,
 				DB50B1A71BA5F01600824DE3 /* icons */,
 				DB50B15A1BA5EFA100824DE3 /* Supporting Files */,
-				DB50B1A81BA5F9B500824DE3 /* README.md */,
 			);
 			path = Solanum2;
 			sourceTree = "<group>";
